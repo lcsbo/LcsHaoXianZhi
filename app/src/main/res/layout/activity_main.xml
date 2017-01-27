@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.lovell.lcs.lcshaoxianzhi.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+
+       >
+       <RadioButton
+           android:id="@+id/home_button_home"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="首页"
+           android:textColor="#ccc"
+           android:button="@null"
+           android:gravity="center"
+           android:padding="2dp"
+           android:drawableTop="@drawable/home"
+           />
+
+       <RadioButton
+           android:id="@+id/home_button_guanzhu"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="关注"
+           android:button="@null"
+           android:gravity="center"
+           android:padding="2dp"
+           android:drawableTop="@drawable/guanzhu"
+           android:textColor="#ccc"
+           />
+
+       <ImageView
+           android:id="@+id/home_image_zhaoxiang"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:src="@drawable/zhaoxiang"
+           android:clickable="true"
+           />
+
+       <RadioButton
+           android:id="@+id/home_button_message"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="消息"
+           android:button="@null"
+           android:gravity="center"
+           android:padding="2dp"
+           android:drawableTop="@drawable/message"
+           android:textColor="#ccc"
+           />
+       <RadioButton
+           android:id="@+id/home_button_my"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="我"
+           android:button="@null"
+           android:gravity="center"
+           android:padding="2dp"
+            android:drawableTop="@drawable/my"
+           android:textColor="#ccc"
+           />
+   </RadioGroup>
+</LinearLayout>
